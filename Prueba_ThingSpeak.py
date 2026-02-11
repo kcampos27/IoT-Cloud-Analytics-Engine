@@ -21,9 +21,9 @@ def prueba_inicial():
     print(cuerpo_rpta)
     print("FIN PRUEBA")
 
-def onda_rapida():
+def onda_rapida(key):
     uri = 'https://api.thingspeak.com/update'
-    api_key = 'D4K2RCZANVI1NZTU'
+    api_key = key
 
     puntos = 10  # Cantidad razonable para no morir de aburrimiento
     print(f"Generando onda corta de {puntos} puntos...")
@@ -34,7 +34,8 @@ def onda_rapida():
 
         datos = {
             'api_key': api_key,
-            'field1': f"{valor_seno:.2f}"
+            'field1': f"{valor_seno:.2f}",
+            'field2': f"{valor_seno:.2f}"
         }
 
         try:
@@ -53,7 +54,3 @@ def onda_rapida():
             time.sleep(16)
 
     print("\n¡Listo! Revisa tu gráfica en ThingSpeak.")
-
-
-if __name__ == '__main__':
-    onda_rapida()
