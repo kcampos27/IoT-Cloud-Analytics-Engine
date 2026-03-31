@@ -20,6 +20,3 @@ This project is a Python tool designed to monitor local PC performance and autom
 - **Language:** Python 3
 - **Key Libraries:** `requests` (APIs), `psutil` (Hardware), `urllib`, and `json`.
 - **Cloud Platform:** ThingSpeak (IoT Analytics).
-
-## 💡 Why I built this
-I wanted a lightweight way to centralize hardware metrics without relying on heavy third-party software. This is a direct implementation of how to bridge local scripts with IoT infrastructure for total data control.
